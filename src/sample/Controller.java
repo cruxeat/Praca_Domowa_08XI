@@ -1,0 +1,19 @@
+package sample;
+
+import javafx.event.ActionEvent;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+
+public class Controller {
+    public TextField textfield1;
+    public TextField textfield2;
+    public Label label;
+
+
+
+    public void handleCLICK(ActionEvent actionEvent) {
+        label.setText(textfield1.getText()+textfield2.getText());
+    }
+
+}
